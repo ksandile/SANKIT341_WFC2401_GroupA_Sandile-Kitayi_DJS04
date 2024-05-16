@@ -63,6 +63,10 @@
           </svg>
         </div>
         <div>
+          <header-search></header-search>
+          <header-settings></header-settings>
+      </div>
+        <div>
           <button class="header__button" data-header-search>
             <svg
               class="header__icon"
@@ -143,6 +147,11 @@
         <form class="overlay__form" data-settings-form id="settings">
           <label class="overlay__field">
             <div class="overlay__label">Theme</div>
+            <dropdown-menu
+              data='{"day": "Day", "night": "Night"}'
+              default-value="Select Theme"
+              selector="#settings"
+            ></dropdown-menu>
 
             <select class="overlay__input overlay__input_select" data-settings-theme name="theme">
               <option value="day">Day</option>
